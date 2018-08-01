@@ -240,6 +240,6 @@
     })
 </script>
 
-    </script>
+
   </body>
 </html>
