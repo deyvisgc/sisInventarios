@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'email', 'Password','Persona_idPersona' ,'created_at',
+        'email', 'password','Persona_idPersona' ,'created_at',
         'updated_at',
     ];
 
@@ -27,6 +27,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'Password', 'remember_token',
+        'password', 'remember_token',
+    ];
+
+    public static $loginvalidate=[
+        'email'=>'required',
+        'password'=>'required'
     ];
 }

@@ -24,8 +24,8 @@ class PersonaRequest extends FormRequest
     public function rules()
     {
         return [
-             'usuarios'=>'required|unique:posts|max:255',
-             'Password' => 'required'
+             'email'=>'required|max:255',
+             'password' => 'required'
         ];
     }
 }

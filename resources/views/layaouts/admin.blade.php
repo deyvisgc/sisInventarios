@@ -71,12 +71,14 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <small class="bg-red">Online</small>
-                  <span class="hidden-xs">Juan Carlos Arcila Díaz</span>
+                  @if (Auth::check())
+                  <span class="hidden-xs">{{Auth::user()->email}}</span>
+                  @endif
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    
+
                     <p>
                       www.incanatoit.com - Desarrollando Software
                       <small>www.youtube.com/jcarlosad7</small>
